@@ -1,0 +1,64 @@
+/* siteHeader */
+.siteHeader{
+    padding:4px 16px;
+}
+.siteHeader > h1{
+    padding:4px 16px;
+    font-size: 32px;
+}
+/* end */
+
+/* calendar ; BEM 命名法 */
+.calendar{
+    background-color: #fff;
+    color:#333;
+    margin:16px;
+    border-radius: 24px;
+}
+.calendar-header{
+    text-align: center;
+    padding: 12px 0;
+    font-size: 18px;
+}
+.calendar-header > time{
+}
+.calendar-weekdays{
+    display: flex;
+}
+.calendar-weekdays > li{
+    width: 14.2857%;
+    text-align: center;
+    line-height: 42px;
+    border: 1px solid rgba(127, 127, 127, 0.1);
+}
+.calendar-days{
+    display: flex;
+    flex-wrap: wrap;
+}
+.calendar-days > li{
+    display: block;
+    width: 14.2857%;
+    text-align: center;
+    line-height: 42px;
+    border: 1px solid rgba(127, 127, 127, 0.1);
+}
+.calendar-actions{
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+}
+.calendar-actions button{
+    font-size: 14px;
+    height: 24px;
+    padding:0 10px;
+}
+.calendar-actions-left{
+    margin-left: 10px;
+}
+.calendar-actions-left > button{}
+.calendar-actions-right{
+    display: flex;
+    margin-right: 10px;
+}
+.calendar-actions-right > button{}
+/* end */
