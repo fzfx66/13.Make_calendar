@@ -1,3 +1,8 @@
+/* .allPage{
+    width: 100vw;
+    height: 100vh;
+    border:2px solid red;
+} */
 /* siteHeader */
 .siteHeader{
     padding:4px 16px;
@@ -20,8 +25,6 @@
     padding: 12px 0;
     font-size: 18px;
 }
-.calendar-header > time{
-}
 .calendar-weekdays{
     display: flex;
 }
@@ -42,6 +45,17 @@
     line-height: 42px;
     border: 1px solid rgba(127, 127, 127, 0.1);
 }
+.calendar-days-today{
+    background-color: #fed32c;
+    border-radius: 5px;
+}
+.calendar-days > li.calendar-days-selected{  /*选择器越多优先级越高*/
+    outline:2px solid #fed32c;
+    border-radius: 2px;
+}
+.calendar-days-noThisMonth{
+    color:#999
+}
 .calendar-actions{
     display: flex;
     justify-content: space-between;
@@ -55,10 +69,8 @@
 .calendar-actions-left{
     margin-left: 10px;
 }
-.calendar-actions-left > button{}
 .calendar-actions-right{
     display: flex;
     margin-right: 10px;
 }
-.calendar-actions-right > button{}
 /* end */
