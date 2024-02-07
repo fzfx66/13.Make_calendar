@@ -44,6 +44,7 @@
     text-align: center;
     line-height: 42px;
     border: 1px solid rgba(127, 127, 127, 0.1);
+    position: relative;
 }
 .calendar-days-today{
     background-color: #fed32c;
@@ -53,8 +54,17 @@
     outline:2px solid #fed32c;
     border-radius: 2px;
 }
-.calendar-days-noThisMonth{
+.calendar-days > li.calendar-days-noThisMonth{
     color:#999
+}
+.calendar-days > li.calendar-days-hasEvents::after{
+    border:1px solid green;
+    background-color: green;
+    position: absolute;
+    content:'';
+    width: 8px;height: 8px;padding: 0;
+    right:4px;top:4px;
+    border-radius: 50%;
 }
 .calendar-actions{
     display: flex;
@@ -74,3 +84,12 @@
     margin-right: 10px;
 }
 /* end */
+/* events */
+.eventsWrapper{
+    border:1px solid #eee;
+    margin:16px;
+    padding:20px;
+}
+.eventsWrapper > .events > div{
+    padding:5px;
+}
