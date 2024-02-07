@@ -1,6 +1,4 @@
 let currentTime = new Date()
-const year = currentTime.getFullYear()
-const month = currentTime.getMonth() + 1   //month从0开始
 let $selectedLi
 render(currentTime)
 // 点击事件：上月、下月、今天
@@ -18,7 +16,7 @@ g('#currentDay').onclick = ()=>{
 // 使用 事件委托 实现选中日期并展示日程
 g('.calendar-days').addEventListener('click',(e)=>{
     const t = e.target
-    const clickKey = `${year}-${month}-${t.textContent}`
+    const clickKey = `${currentTime.getFullYear()}-${currentTime.getMonth() + 1}-${t.textContent}` //month从0开始
     const clickEvents = window.date[clickKey]
     if(t.tagName.toLowerCase() === 'li'){
         if($selectedLi){
