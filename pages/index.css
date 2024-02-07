@@ -1,18 +1,16 @@
-/* .allPage{
-    width: 100vw;
-    height: 100vh;
-    border:2px solid red;
-} */
 /* siteHeader */
 .siteHeader{
+    width:200px;
     padding:4px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 .siteHeader > h1{
     padding:4px 16px;
     font-size: 32px;
 }
 /* end */
-
 /* calendar ; BEM 命名法 */
 .calendar{
     background-color: #fff;
